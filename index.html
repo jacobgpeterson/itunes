@@ -15,10 +15,20 @@
           </div>
           <form class="navbar-form navbar-left" role="search">
             <div class="form-group">
-              <input type="text" class="form-control" ng-model="artist" placeholder="Artist Name" >
+              <input type="text" class="form-control" ng-model="artist" placeholder="Search" >
               <button class="btn btn-primary" ng-click="getSongData()"> Submit </button>
             </div>
           </form>
+          <label>
+            <select class="form-control ng-pristine ng-valid" ng-model="mediaType" ng-change="somethingSomething">
+              <option value="all" selected>All</option>
+              <option value="musicVideo" selected>Music Video</option>
+              <option value="movie" selected>Movie</option>
+              <option value="musicTrack" selected>Music</option>
+              <option value="podcast" selected>Podcast</option>
+              <option value="tvShow" selected>TV Show</option>
+            </select>
+          </label>
         </div>
       </div>
     </div>
